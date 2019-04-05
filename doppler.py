@@ -6,13 +6,14 @@ import ephem
 import time
 import sys
 import ssl
-
+import geocoder
 
 C = 300000000.0
 F0 = 145800000.0
 
-LATITUDE = "52.219308"
-LONGITUDE = "4.419926"
+#LATITUDE = "52.219308"
+#LONGITUDE = "4.419926"
+LATITUDE, LONGITUDE = geocoder.ip('me').latlng
 ALTITUDE = 20
 
 
